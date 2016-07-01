@@ -7,21 +7,65 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		86261F7F1D2470C30046BC4C /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86261F7E1D2470C30046BC4C /* DetailViewController.swift */; };
+		86261F811D247D8C0046BC4C /* ComposeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86261F801D247D8C0046BC4C /* ComposeViewController.swift */; };
+		86261F831D2587400046BC4C /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86261F821D2587400046BC4C /* ProfileViewController.swift */; };
+		86261F851D25B9110046BC4C /* UserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86261F841D25B9110046BC4C /* UserViewController.swift */; };
+		86261F881D2644CE0046BC4C /* twitter login.png in Resources */ = {isa = PBXBuildFile; fileRef = 86261F871D2644CE0046BC4C /* twitter login.png */; };
+		86261F8A1D26456E0046BC4C /* twitter_word.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 86261F891D26456E0046BC4C /* twitter_word.jpg */; };
+		86261F8C1D26469C0046BC4C /* iconmonstr-retweet-1-24.png in Resources */ = {isa = PBXBuildFile; fileRef = 86261F8B1D26469C0046BC4C /* iconmonstr-retweet-1-24.png */; };
+		86261F8E1D2647350046BC4C /* iconmonstr-favorite-7-24.png in Resources */ = {isa = PBXBuildFile; fileRef = 86261F8D1D2647350046BC4C /* iconmonstr-favorite-7-24.png */; };
+		86261F901D2648FD0046BC4C /* iconmonstr-pencil-2-72.png in Resources */ = {isa = PBXBuildFile; fileRef = 86261F8F1D2648FD0046BC4C /* iconmonstr-pencil-2-72.png */; };
+		86261F921D2649060046BC4C /* iconmonstr-retweet-1-72.png in Resources */ = {isa = PBXBuildFile; fileRef = 86261F911D2649060046BC4C /* iconmonstr-retweet-1-72.png */; };
+		86261F941D26490D0046BC4C /* iconmonstr-favorite-7-72.png in Resources */ = {isa = PBXBuildFile; fileRef = 86261F931D26490D0046BC4C /* iconmonstr-favorite-7-72.png */; };
+		86261F961D26508A0046BC4C /* iconmonstr-twitter-1-32.png in Resources */ = {isa = PBXBuildFile; fileRef = 86261F951D26508A0046BC4C /* iconmonstr-twitter-1-32.png */; };
+		86261F981D2651540046BC4C /* iconmonstr-user-29-32.png in Resources */ = {isa = PBXBuildFile; fileRef = 86261F971D2651540046BC4C /* iconmonstr-user-29-32.png */; };
+		86261F9A1D26524E0046BC4C /* iconmonstr-edit-6-48.png in Resources */ = {isa = PBXBuildFile; fileRef = 86261F991D26524E0046BC4C /* iconmonstr-edit-6-48.png */; };
+		86261F9C1D2652900046BC4C /* iconmonstr-log-out-7-48.png in Resources */ = {isa = PBXBuildFile; fileRef = 86261F9B1D2652900046BC4C /* iconmonstr-log-out-7-48.png */; };
 		86AB924C1D21BF4000D11F6D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86AB924B1D21BF4000D11F6D /* AppDelegate.swift */; };
-		86AB924E1D21BF4000D11F6D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86AB924D1D21BF4000D11F6D /* ViewController.swift */; };
 		86AB92511D21BF4000D11F6D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 86AB924F1D21BF4000D11F6D /* Main.storyboard */; };
 		86AB92531D21BF4000D11F6D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 86AB92521D21BF4000D11F6D /* Assets.xcassets */; };
 		86AB92561D21BF4000D11F6D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 86AB92541D21BF4000D11F6D /* LaunchScreen.storyboard */; };
+		86AB925E1D21C56900D11F6D /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86AB925D1D21C56900D11F6D /* LoginViewController.swift */; };
+		86AB92631D21D70600D11F6D /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86AB92621D21D70600D11F6D /* User.swift */; };
+		86AB92651D21D71100D11F6D /* Tweet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86AB92641D21D71100D11F6D /* Tweet.swift */; };
+		86AB92671D21DD3200D11F6D /* TwitterClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86AB92661D21DD3200D11F6D /* TwitterClient.swift */; };
+		86AB92691D21EDAD00D11F6D /* TweetsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86AB92681D21EDAD00D11F6D /* TweetsViewController.swift */; };
+		86AB926B1D23143E00D11F6D /* TweetCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86AB926A1D23143E00D11F6D /* TweetCell.swift */; };
+		C6BA9FF10A7C5736EF5B19F4 /* Pods_Twient.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4668BA25E7CBE66B407FFEDD /* Pods_Twient.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2C3D6AC77603381918B94742 /* Pods-Twient.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Twient.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Twient/Pods-Twient.debug.xcconfig"; sourceTree = "<group>"; };
+		31A683888BDE0BF2626ED6BB /* Pods-Twient.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Twient.release.xcconfig"; path = "Pods/Target Support Files/Pods-Twient/Pods-Twient.release.xcconfig"; sourceTree = "<group>"; };
+		4668BA25E7CBE66B407FFEDD /* Pods_Twient.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Twient.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		86261F7E1D2470C30046BC4C /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		86261F801D247D8C0046BC4C /* ComposeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ComposeViewController.swift; sourceTree = "<group>"; };
+		86261F821D2587400046BC4C /* ProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		86261F841D25B9110046BC4C /* UserViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserViewController.swift; sourceTree = "<group>"; };
+		86261F871D2644CE0046BC4C /* twitter login.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "twitter login.png"; sourceTree = "<group>"; };
+		86261F891D26456E0046BC4C /* twitter_word.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = twitter_word.jpg; sourceTree = "<group>"; };
+		86261F8B1D26469C0046BC4C /* iconmonstr-retweet-1-24.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "iconmonstr-retweet-1-24.png"; sourceTree = "<group>"; };
+		86261F8D1D2647350046BC4C /* iconmonstr-favorite-7-24.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "iconmonstr-favorite-7-24.png"; sourceTree = "<group>"; };
+		86261F8F1D2648FD0046BC4C /* iconmonstr-pencil-2-72.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "iconmonstr-pencil-2-72.png"; sourceTree = "<group>"; };
+		86261F911D2649060046BC4C /* iconmonstr-retweet-1-72.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "iconmonstr-retweet-1-72.png"; sourceTree = "<group>"; };
+		86261F931D26490D0046BC4C /* iconmonstr-favorite-7-72.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "iconmonstr-favorite-7-72.png"; sourceTree = "<group>"; };
+		86261F951D26508A0046BC4C /* iconmonstr-twitter-1-32.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "iconmonstr-twitter-1-32.png"; sourceTree = "<group>"; };
+		86261F971D2651540046BC4C /* iconmonstr-user-29-32.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "iconmonstr-user-29-32.png"; sourceTree = "<group>"; };
+		86261F991D26524E0046BC4C /* iconmonstr-edit-6-48.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "iconmonstr-edit-6-48.png"; sourceTree = "<group>"; };
+		86261F9B1D2652900046BC4C /* iconmonstr-log-out-7-48.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "iconmonstr-log-out-7-48.png"; sourceTree = "<group>"; };
 		86AB92481D21BF4000D11F6D /* Twient.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Twient.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		86AB924B1D21BF4000D11F6D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		86AB924D1D21BF4000D11F6D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		86AB92501D21BF4000D11F6D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		86AB92521D21BF4000D11F6D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		86AB92551D21BF4000D11F6D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		86AB92571D21BF4000D11F6D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		86AB925D1D21C56900D11F6D /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		86AB92621D21D70600D11F6D /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		86AB92641D21D71100D11F6D /* Tweet.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Tweet.swift; sourceTree = "<group>"; };
+		86AB92661D21DD3200D11F6D /* TwitterClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TwitterClient.swift; sourceTree = "<group>"; };
+		86AB92681D21EDAD00D11F6D /* TweetsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TweetsViewController.swift; sourceTree = "<group>"; };
+		86AB926A1D23143E00D11F6D /* TweetCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TweetCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +73,47 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C6BA9FF10A7C5736EF5B19F4 /* Pods_Twient.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6D7A6268D93CAA766ADC2544 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				2C3D6AC77603381918B94742 /* Pods-Twient.debug.xcconfig */,
+				31A683888BDE0BF2626ED6BB /* Pods-Twient.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		86261F861D2641EF0046BC4C /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				86261F9B1D2652900046BC4C /* iconmonstr-log-out-7-48.png */,
+				86261F991D26524E0046BC4C /* iconmonstr-edit-6-48.png */,
+				86261F971D2651540046BC4C /* iconmonstr-user-29-32.png */,
+				86261F951D26508A0046BC4C /* iconmonstr-twitter-1-32.png */,
+				86261F931D26490D0046BC4C /* iconmonstr-favorite-7-72.png */,
+				86261F911D2649060046BC4C /* iconmonstr-retweet-1-72.png */,
+				86261F8F1D2648FD0046BC4C /* iconmonstr-pencil-2-72.png */,
+				86261F8D1D2647350046BC4C /* iconmonstr-favorite-7-24.png */,
+				86261F8B1D26469C0046BC4C /* iconmonstr-retweet-1-24.png */,
+				86261F871D2644CE0046BC4C /* twitter login.png */,
+				86261F891D26456E0046BC4C /* twitter_word.jpg */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
 		86AB923F1D21BF4000D11F6D = {
 			isa = PBXGroup;
 			children = (
 				86AB924A1D21BF4000D11F6D /* Twient */,
 				86AB92491D21BF4000D11F6D /* Products */,
+				6D7A6268D93CAA766ADC2544 /* Pods */,
+				FABD96FF58770297B74E0B07 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,14 +128,56 @@
 		86AB924A1D21BF4000D11F6D /* Twient */ = {
 			isa = PBXGroup;
 			children = (
+				86261F861D2641EF0046BC4C /* Supporting Files */,
+				86AB92611D21D6E000D11F6D /* API */,
+				86AB92601D21D6CA00D11F6D /* ViewControllers */,
+				86AB925F1D21D6C000D11F6D /* Modals */,
 				86AB924B1D21BF4000D11F6D /* AppDelegate.swift */,
-				86AB924D1D21BF4000D11F6D /* ViewController.swift */,
 				86AB924F1D21BF4000D11F6D /* Main.storyboard */,
 				86AB92521D21BF4000D11F6D /* Assets.xcassets */,
 				86AB92541D21BF4000D11F6D /* LaunchScreen.storyboard */,
 				86AB92571D21BF4000D11F6D /* Info.plist */,
 			);
 			path = Twient;
+			sourceTree = "<group>";
+		};
+		86AB925F1D21D6C000D11F6D /* Modals */ = {
+			isa = PBXGroup;
+			children = (
+				86AB92621D21D70600D11F6D /* User.swift */,
+				86AB92641D21D71100D11F6D /* Tweet.swift */,
+				86AB926A1D23143E00D11F6D /* TweetCell.swift */,
+			);
+			name = Modals;
+			sourceTree = "<group>";
+		};
+		86AB92601D21D6CA00D11F6D /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				86AB925D1D21C56900D11F6D /* LoginViewController.swift */,
+				86AB92681D21EDAD00D11F6D /* TweetsViewController.swift */,
+				86261F7E1D2470C30046BC4C /* DetailViewController.swift */,
+				86261F801D247D8C0046BC4C /* ComposeViewController.swift */,
+				86261F821D2587400046BC4C /* ProfileViewController.swift */,
+				86261F841D25B9110046BC4C /* UserViewController.swift */,
+			);
+			name = ViewControllers;
+			sourceTree = "<group>";
+		};
+		86AB92611D21D6E000D11F6D /* API */ = {
+			isa = PBXGroup;
+			children = (
+				86AB92661D21DD3200D11F6D /* TwitterClient.swift */,
+			);
+			name = API;
+			sourceTree = "<group>";
+		};
+		FABD96FF58770297B74E0B07 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4668BA25E7CBE66B407FFEDD /* Pods_Twient.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +187,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 86AB925A1D21BF4000D11F6D /* Build configuration list for PBXNativeTarget "Twient" */;
 			buildPhases = (
+				E375611AFE21CFB3E632DF09 /* [CP] Check Pods Manifest.lock */,
 				86AB92441D21BF4000D11F6D /* Sources */,
 				86AB92451D21BF4000D11F6D /* Frameworks */,
 				86AB92461D21BF4000D11F6D /* Resources */,
+				660D6CDCB541816D5D35DF41 /* [CP] Embed Pods Frameworks */,
+				534E44D90404C691552C88C2 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -122,21 +241,89 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				86261F881D2644CE0046BC4C /* twitter login.png in Resources */,
 				86AB92561D21BF4000D11F6D /* LaunchScreen.storyboard in Resources */,
+				86261F8C1D26469C0046BC4C /* iconmonstr-retweet-1-24.png in Resources */,
+				86261F921D2649060046BC4C /* iconmonstr-retweet-1-72.png in Resources */,
+				86261F8A1D26456E0046BC4C /* twitter_word.jpg in Resources */,
+				86261F8E1D2647350046BC4C /* iconmonstr-favorite-7-24.png in Resources */,
+				86261F981D2651540046BC4C /* iconmonstr-user-29-32.png in Resources */,
+				86261F9C1D2652900046BC4C /* iconmonstr-log-out-7-48.png in Resources */,
 				86AB92531D21BF4000D11F6D /* Assets.xcassets in Resources */,
+				86261F961D26508A0046BC4C /* iconmonstr-twitter-1-32.png in Resources */,
+				86261F901D2648FD0046BC4C /* iconmonstr-pencil-2-72.png in Resources */,
+				86261F941D26490D0046BC4C /* iconmonstr-favorite-7-72.png in Resources */,
+				86261F9A1D26524E0046BC4C /* iconmonstr-edit-6-48.png in Resources */,
 				86AB92511D21BF4000D11F6D /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		534E44D90404C691552C88C2 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Twient/Pods-Twient-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		660D6CDCB541816D5D35DF41 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Twient/Pods-Twient-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E375611AFE21CFB3E632DF09 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		86AB92441D21BF4000D11F6D /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				86AB924E1D21BF4000D11F6D /* ViewController.swift in Sources */,
+				86261F811D247D8C0046BC4C /* ComposeViewController.swift in Sources */,
+				86AB92631D21D70600D11F6D /* User.swift in Sources */,
+				86261F831D2587400046BC4C /* ProfileViewController.swift in Sources */,
+				86261F851D25B9110046BC4C /* UserViewController.swift in Sources */,
+				86AB926B1D23143E00D11F6D /* TweetCell.swift in Sources */,
+				86AB92651D21D71100D11F6D /* Tweet.swift in Sources */,
+				86AB925E1D21C56900D11F6D /* LoginViewController.swift in Sources */,
+				86AB92691D21EDAD00D11F6D /* TweetsViewController.swift in Sources */,
+				86AB92671D21DD3200D11F6D /* TwitterClient.swift in Sources */,
 				86AB924C1D21BF4000D11F6D /* AppDelegate.swift in Sources */,
+				86261F7F1D2470C30046BC4C /* DetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -247,6 +434,7 @@
 		};
 		86AB925B1D21BF4000D11F6D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2C3D6AC77603381918B94742 /* Pods-Twient.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Twient/Info.plist;
@@ -258,6 +446,7 @@
 		};
 		86AB925C1D21BF4000D11F6D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 31A683888BDE0BF2626ED6BB /* Pods-Twient.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Twient/Info.plist;
@@ -286,6 +475,7 @@
 				86AB925C1D21BF4000D11F6D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -1,0 +1,6 @@
+framework module PrettyTimestamp {
+  umbrella header "PrettyTimestamp-umbrella.h"
+
+  export *
+  module * { export * }
+}

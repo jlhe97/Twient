@@ -1,0 +1,6 @@
+framework module DXTimestamper {
+  umbrella header "DXTimestamper-umbrella.h"
+
+  export *
+  module * { export * }
+}
