@@ -102,11 +102,11 @@ class TwitterClient: BDBOAuth1SessionManager {
     // ------------------------------------------------------------------------------------------------------
     
     // this function is for the retweet API action
-    func retweet(tweet: Tweet){
-        POST("1.1/statuses/retweet/\(tweet.id).json", parameters: nil, progress: nil, success: { (task: NSURLSessionDataTask, response: AnyObject?) -> Void in
-            //completion(error: nil)
+    func retweet(id: String, params: NSDictionary?, completion: (error: NSError?) -> () ){
+        POST("1.1/statuses/retweet/\(id).json", parameters: nil, progress: nil, success: { (task: NSURLSessionDataTask, response: AnyObject?) -> Void in
+            completion(error: nil)
         }) { (task: NSURLSessionDataTask?, error: NSError!) -> Void in
-            //completion(error: error)
+            completion(error: error)
         }
 
     }
@@ -147,15 +147,32 @@ class TwitterClient: BDBOAuth1SessionManager {
     // ------------------------------------------------------------------------------------------------------
     
     // this function if for composing a single tweet and posting it to the feed.
-    func doTweet(params: NSDictionary?, completion: (error: NSError?) -> () ){
-        POST("1.1/statuses/update.json", parameters: nil, progress: nil, success: { (task: NSURLSessionDataTask, response: AnyObject?) -> Void in
-            completion(error: nil)
-        }) { (task: NSURLSessionDataTask?, error: NSError!) -> Void in
-                completion(error: error)
+    func doTweet(text: String){
+       
+        var params = NSDictionary()
+        params = ["status": text]
+        POST("1.1/statuses/update.json", parameters: params, success: { (task: NSURLSessionDataTask, response: AnyObject?) in
+        }) { (task: NSURLSessionDataTask?, error: NSError) in
         }
     }
     
     // ------------------------------------------------------------------------------------------------------
+    
+//    func replyTweet(replyID: String, params: NSDictionary?, completion: (error: NSError?) -> () ){
+//        TwitterClient.sharedInstance.POST("1.1/statuses/update.json?status=&in_reply_to_status_id=\(replyID)", parameters: nil, success: { (task: NSURLSessionDataTask, response: AnyObject?) -> Void in
+//            completion(error: nil)
+//        }) { (task: NSURLSessionDataTask?, error: NSError!) -> Void in
+//                completion(error: error)
+//        }
+//    }
+    
+    func replyTweet(replyID replyID: String = "", success: (Tweet) -> (), failure: NSError -> ()) {
+        TwitterClient.sharedInstance.POST("1.1/statuses/update.json?status=&in_reply_to_status_id=\(replyID)", parameters: nil, progress: nil, success: { (task: NSURLSessionDataTask, response: AnyObject?) in
+                success(Tweet(dictionary: response as! NSDictionary))
+        }) { (task: NSURLSessionDataTask?, error: NSError) in
+                failure(error)
+        }
+    }
 
     
 } // end of class

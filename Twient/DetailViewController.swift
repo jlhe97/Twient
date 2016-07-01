@@ -26,10 +26,11 @@ class DetailViewController: UIViewController {
     // function is supposed to increase retweet amount
     @IBAction func didRTAction(sender: AnyObject) {
         
-        TwitterClient.sharedInstance.retweet(singleTweet)
+        TwitterClient.sharedInstance.retweet(singleTweet.idString!, params: nil) { (error) in
             if self.singleTweet.retweetCount >= 0 {
                 self.detailRTLabel.text = "\(self.singleTweet.retweetCount + 1)"
             }
+        }
         
         
     }
@@ -39,7 +40,6 @@ class DetailViewController: UIViewController {
     // function is supposed to increase favorite amount
     @IBAction func didFAVAction(sender: AnyObject) {
         TwitterClient.sharedInstance.favorite(singleTweet.idString!, params: nil) { (error) in
-            
             if self.singleTweet.favoriteCount >= 0 {
                 self.detailFAVLabel.text = "\(self.singleTweet.favoriteCount + 1)"
             }
@@ -48,8 +48,11 @@ class DetailViewController: UIViewController {
     
     }
    
-    
     // --------------------------------------------------
+    
+        
+    // --------------------------------------------------
+
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -78,11 +81,29 @@ class DetailViewController: UIViewController {
         self.detailFAVLabel.text = tweetFV
 
     }
+    
+// --------------------------------------------------
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
     
+// --------------------------------------------------
+    
+    @IBAction func replyButton(sender: AnyObject) {
+        performSegueWithIdentifier("replySegue", sender: nil)
+    }
+    
+// --------------------------------------------------
+
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        if segue.identifier == "replySegue"{
+            
+            let username = detailUsernameLabel.text
+            let composeViewController = segue.destinationViewController as! ComposeViewController
+            composeViewController.currentTweetUsername = username
+        }
+      }
 
 } // end of DetailViewController class

@@ -353,19 +353,32 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="Tweet Here" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="GNl-OI-Md3">
-                                <rect key="frame" x="20" y="98" width="374" height="128"/>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="GNl-OI-Md3">
+                                <rect key="frame" x="20" y="177" width="374" height="121"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="G4E-gI-TUF">
-                                <rect key="frame" x="75" y="261" width="31" height="30"/>
-                                <state key="normal" title="Post"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="characters left" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cN7-sG-8oX">
+                                <rect key="frame" x="20" y="130" width="111" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="G4E-gI-TUF">
+                                <rect key="frame" x="92" y="306" width="231" height="215"/>
+                                <state key="normal" title="Post" image="iconmonstr-note-22-120.png"/>
+                                <connections>
+                                    <action selector="postTweet:" destination="2Bt-rW-rHX" eventType="touchUpInside" id="RTx-7H-ecj"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <connections>
+                        <outlet property="charactersLeftLabel" destination="cN7-sG-8oX" id="n7b-kh-0dC"/>
+                        <outlet property="composeTextView" destination="GNl-OI-Md3" id="3en-Z2-bAO"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4gp-mJ-ebT" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -437,6 +450,9 @@
                                     <accessibilityTraits key="traits" button="YES" image="YES"/>
                                 </accessibility>
                                 <state key="normal" title="Button" image="iconmonstr-pencil-2-72.png"/>
+                                <connections>
+                                    <action selector="replyButton:" destination="5pF-qY-SE9" eventType="touchUpInside" id="lIG-si-KhA"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="FAV count" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PAa-1z-NWr">
                                 <rect key="frame" x="16" y="533" width="78" height="33"/>
@@ -454,6 +470,7 @@
                         <outlet property="detailTweetLabel" destination="Qhx-Y4-d5T" id="KW7-OB-wYU"/>
                         <outlet property="detailUsernameLabel" destination="aVa-eQ-0mh" id="TUM-v6-Fzz"/>
                         <outlet property="timestampLabel" destination="liT-HX-itg" id="iRN-6L-hQU"/>
+                        <segue destination="2Bt-rW-rHX" kind="show" identifier="replySegue" id="x9g-xO-zQO"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="uhI-7n-a3G" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -486,6 +503,7 @@
         <image name="iconmonstr-favorite-7-24.png" width="24" height="24"/>
         <image name="iconmonstr-favorite-7-72.png" width="72" height="72"/>
         <image name="iconmonstr-log-out-7-48.png" width="48" height="48"/>
+        <image name="iconmonstr-note-22-120.png" width="120" height="120"/>
         <image name="iconmonstr-pencil-2-72.png" width="72" height="72"/>
         <image name="iconmonstr-retweet-1-24.png" width="24" height="24"/>
         <image name="iconmonstr-retweet-1-72.png" width="72" height="72"/>
@@ -494,4 +512,7 @@
         <image name="twitter login.png" width="512" height="512"/>
         <image name="twitter_word.jpg" width="1000" height="1000"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="x9g-xO-zQO"/>
+    </inferredMetricsTieBreakers>
 </document>

@@ -18,10 +18,6 @@ class TweetsViewController: UIViewController, UITableViewDelegate, UITableViewDa
     
     // ------------------------------------------------------------------------------------------------------
     
-    
-    
-    // ------------------------------------------------------------------------------------------------------
-    
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return tweets.count
     }
@@ -110,11 +106,6 @@ class TweetsViewController: UIViewController, UITableViewDelegate, UITableViewDa
     
     // ------------------------------------------------------------------------------------------------------
     
-    
-    
-    
-    // ------------------------------------------------------------------------------------------------------
-    
     // this function sends information over to the view controller that shows the details of the image.
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         
@@ -125,8 +116,6 @@ class TweetsViewController: UIViewController, UITableViewDelegate, UITableViewDa
             let detailViewController = segue.destinationViewController as! DetailViewController
             detailViewController.singleTweet = tweet
         } else if segue.identifier == "tweetProfileSegue" {
-            // let button = sender as! UIButton
-            // fix this problem
             let button = sender as! UIButton
             let contentView = button.superview
             let cell = contentView?.superview as! TweetCell

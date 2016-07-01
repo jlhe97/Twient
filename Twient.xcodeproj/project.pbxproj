@@ -22,6 +22,8 @@
 		86261F981D2651540046BC4C /* iconmonstr-user-29-32.png in Resources */ = {isa = PBXBuildFile; fileRef = 86261F971D2651540046BC4C /* iconmonstr-user-29-32.png */; };
 		86261F9A1D26524E0046BC4C /* iconmonstr-edit-6-48.png in Resources */ = {isa = PBXBuildFile; fileRef = 86261F991D26524E0046BC4C /* iconmonstr-edit-6-48.png */; };
 		86261F9C1D2652900046BC4C /* iconmonstr-log-out-7-48.png in Resources */ = {isa = PBXBuildFile; fileRef = 86261F9B1D2652900046BC4C /* iconmonstr-log-out-7-48.png */; };
+		86261F9E1D26E5DE0046BC4C /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 86261F9D1D26E5DE0046BC4C /* Default-568h@2x.png */; };
+		86261FA01D26EBD90046BC4C /* iconmonstr-note-22-120.png in Resources */ = {isa = PBXBuildFile; fileRef = 86261F9F1D26EBD90046BC4C /* iconmonstr-note-22-120.png */; };
 		86AB924C1D21BF4000D11F6D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86AB924B1D21BF4000D11F6D /* AppDelegate.swift */; };
 		86AB92511D21BF4000D11F6D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 86AB924F1D21BF4000D11F6D /* Main.storyboard */; };
 		86AB92531D21BF4000D11F6D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 86AB92521D21BF4000D11F6D /* Assets.xcassets */; };
@@ -54,6 +56,8 @@
 		86261F971D2651540046BC4C /* iconmonstr-user-29-32.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "iconmonstr-user-29-32.png"; sourceTree = "<group>"; };
 		86261F991D26524E0046BC4C /* iconmonstr-edit-6-48.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "iconmonstr-edit-6-48.png"; sourceTree = "<group>"; };
 		86261F9B1D2652900046BC4C /* iconmonstr-log-out-7-48.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "iconmonstr-log-out-7-48.png"; sourceTree = "<group>"; };
+		86261F9D1D26E5DE0046BC4C /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		86261F9F1D26EBD90046BC4C /* iconmonstr-note-22-120.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "iconmonstr-note-22-120.png"; path = "../../../Downloads/iconmonstr-note-22-120.png"; sourceTree = "<group>"; };
 		86AB92481D21BF4000D11F6D /* Twient.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Twient.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		86AB924B1D21BF4000D11F6D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		86AB92501D21BF4000D11F6D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -92,6 +96,7 @@
 		86261F861D2641EF0046BC4C /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				86261F9F1D26EBD90046BC4C /* iconmonstr-note-22-120.png */,
 				86261F9B1D2652900046BC4C /* iconmonstr-log-out-7-48.png */,
 				86261F991D26524E0046BC4C /* iconmonstr-edit-6-48.png */,
 				86261F971D2651540046BC4C /* iconmonstr-user-29-32.png */,
@@ -110,6 +115,7 @@
 		86AB923F1D21BF4000D11F6D = {
 			isa = PBXGroup;
 			children = (
+				86261F9D1D26E5DE0046BC4C /* Default-568h@2x.png */,
 				86AB924A1D21BF4000D11F6D /* Twient */,
 				86AB92491D21BF4000D11F6D /* Products */,
 				6D7A6268D93CAA766ADC2544 /* Pods */,
@@ -249,10 +255,12 @@
 				86261F8E1D2647350046BC4C /* iconmonstr-favorite-7-24.png in Resources */,
 				86261F981D2651540046BC4C /* iconmonstr-user-29-32.png in Resources */,
 				86261F9C1D2652900046BC4C /* iconmonstr-log-out-7-48.png in Resources */,
+				86261F9E1D26E5DE0046BC4C /* Default-568h@2x.png in Resources */,
 				86AB92531D21BF4000D11F6D /* Assets.xcassets in Resources */,
 				86261F961D26508A0046BC4C /* iconmonstr-twitter-1-32.png in Resources */,
 				86261F901D2648FD0046BC4C /* iconmonstr-pencil-2-72.png in Resources */,
 				86261F941D26490D0046BC4C /* iconmonstr-favorite-7-72.png in Resources */,
+				86261FA01D26EBD90046BC4C /* iconmonstr-note-22-120.png in Resources */,
 				86261F9A1D26524E0046BC4C /* iconmonstr-edit-6-48.png in Resources */,
 				86AB92511D21BF4000D11F6D /* Main.storyboard in Resources */,
 			);
